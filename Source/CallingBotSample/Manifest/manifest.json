@@ -1,0 +1,53 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.14/MicrosoftTeams.schema.json",
+  "version": "1.0.3",
+  "manifestVersion": "1.14",
+  "id": "62fbd96b-e663-44c7-94ab-3cfacc2e582f",
+  "packageName": "com.acs.sample",
+  "developer": {
+    "name": "Contoso",
+    "websiteUrl": "https://example.azurewebsites.net",
+    "privacyUrl": "https://teams.microsoft.com",
+    "termsOfUseUrl": "https://teams.microsoft.com"
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "name": {
+    "short": "Calling bot",
+    "full": "Calling bot"
+  },
+  "description": {
+    "short": "Calling bot",
+    "full": "Calling bot"
+  },
+  "accentColor": "#FFFFFF",
+  "bots": [
+    {
+      "botId": "62fbd96b-e663-44c7-94ab-3cfacc2e582f",
+      "scopes": ["personal", "team", "groupchat"],
+      "commandLists": [
+        {
+          "commands": [
+            {
+              "title": "welcome",
+              "description": "Resend welcome card of this Bot"
+            }
+          ],
+          "scopes": ["personal"]
+        }
+      ],
+      "supportsFiles": false,
+      "isNotificationOnly": false,
+      "supportsCalling": true,
+      "supportsVideo": true
+    }
+  ],
+  "permissions": ["identity", "messageTeamMembers"],
+  "validDomains": ["*.ngrok-free.app"],
+  "webApplicationInfo": {
+    "id": "62fbd96b-e663-44c7-94ab-3cfacc2e582f",
+    "resource": "https://RscString"
+  }
+}
